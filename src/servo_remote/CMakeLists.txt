@@ -139,6 +139,9 @@ include_directories(
 add_executable(servo_remote src/servo_remote.cpp)
 target_link_libraries(servo_remote ${catkin_LIBRARIES})
 add_dependencies(servo_remote dji_sdk_generate_messages_cpp)
+add_executable(servo_remote_class src/servo_remote.cpp)
+target_link_libraries(servo_remote_class ${catkin_LIBRARIES})
+add_dependencies(servo_remote_class dji_sdk_generate_messages_cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
